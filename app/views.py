@@ -9,3 +9,6 @@ def index(response):
 def home(response):
     return render(response, "app/home.html", {})
 
+def profile(response):
+    return render(response, "app/profile.html", {})
+
