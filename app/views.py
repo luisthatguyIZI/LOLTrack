@@ -12,3 +12,12 @@ def home(response):
 def profile(response):
     return render(response, "app/profile.html", {})
 
+def champions(response):
+    return render(response, "app/champions.html", {})
+
+def tierlist(response):
+    return render(response, "app/tierList.html", {})
+
+def live(response):
+    return render(response, "app/live.html", {})
+
