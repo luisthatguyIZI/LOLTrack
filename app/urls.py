@@ -9,4 +9,5 @@ urlpatterns=[
     path("champions/",views.champions,name="champions"),
     path("live/",views.live,name="live"),
     path("tierlist/",views.tierlist,name="tierlist"),
+    path('player/', views.player_info_view, name='player'),
 ]

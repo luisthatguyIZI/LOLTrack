@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Info</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/boot.css'%}">
+</head>
+<body>
+    <h1>Player Info</h1>
+    <ul>
+        <li>Summoner Name: {{ player_info.name }}</li>
+        <li>Summoner Level: {{ player_info.summonerLevel }}</li>
+        <li>Summoner ID: {{ player_info.id }}</li>
+        <li>Account ID: {{ player_info.accountId }}</li>
+    </ul>
+
+    <h2>Match Info</h2>
+    <ul>
+    {% for match in match_info %}
+        <li>{{ match }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

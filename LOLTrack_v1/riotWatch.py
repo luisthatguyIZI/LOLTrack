@@ -1,13 +1,35 @@
-from riotwatcher import LolWatcher, ApiError
+from riotwatcher import LolWatcher
+import requests
 
-lol_watcher = LolWatcher('RGAPI-08e8c6e4-6550-4800-af74-1ffdc91e82f4')
+api_key = 'RGAPI-7369fa4b-0afe-49a3-9307-04aaca793da9'
+region = 'EUW1'
+puuid = 'VVbkrzvOCMvMk_eGgl5Rv3bUrLSNT0iiBbwXSKWBauv3QY8u2MtfJKXienRSM0XzM1H8J_ACdlgANg'
+username=""
+match_id=""
 
-my_region = 'EUW1'
+api_url = "https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Ab0minati0n15"
 
-me = lol_watcher.summoner.by_name(my_region, 'Ab0minati0n15')
-print(me)
+api_url = api_url + '?api_key=' + api_key
+matchList_api_url='https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/VVbkrzvOCMvMk_eGgl5Rv3bUrLSNT0iiBbwXSKWBauv3QY8u2MtfJKXienRSM0XzM1H8J_ACdlgANg/ids?start=0&count=20'
+matchList_api_url= matchList_api_url + "&api_key=" + api_key
+matchData_api_url='https://europe.api.riotgames.com/lol/match/v5/matches/EUW1_6293887808'
+matchData_api_url= matchData_api_url + "?api_key=" + api_key
 
-# all objects are returned (by default) as a dict
-# lets see if i got diamond yet (i probably didnt)
-my_ranked_stats = lol_watcher.league.by_summoner(my_region, me['id'])
-print(my_ranked_stats)
+resp = (requests.get(api_url))
+matchList_resp=(requests.get(matchList_api_url))
+matchData_resp=(requests.get(matchData_api_url))
+
+match_list=(matchList_resp.json())
+match_data=(matchData_resp.json())
+player_info=(resp.json())
+
+me=(match_data['metadata']['participants'].index(puuid))
+print(match_data['info']['participants'][me]['assists'])
+
+kda=((match_data['info']['participants'][me]['kills']) + (match_data['info']['participants'][me]['assists'])) / (match_data['info']['participants'][me]['deaths'])
+print(kda)
+
+#print(match_api_url)
+#print(api_url)
+#print(match_list)
+
