@@ -1,9 +1,11 @@
-const bank = document.querySelectorAll('#bank')
+const bank = document.querySelector('.bank');
 
-const onDropCard= (event) =>{
-    const id =event.dataTransfer.getData('id');
-    bank.appendChild(document.getElementById(id));
-}
+const onDropCard = (event) => {
+  event.preventDefault();
+  const cardId = event.dataTransfer.getData('text/plain');
+  const card = document.getElementById(cardId);
+  bank.appendChild(card);
+};
 
-bank.ondop=onDropCard;
-bank.ondragover=(event) => event.preventDefault();
+bank.addEventListener('drop', onDropCard);
+bank.addEventListener('dragover', (event) => event.preventDefault());

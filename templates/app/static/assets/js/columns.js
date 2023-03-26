@@ -1,4 +1,5 @@
 const columns = document.querySelectorAll('.column');
+const colours=['green','aquamarine','yellow','orange','orangered','red']
 
 const onDragOver = (event) => {
   event.preventDefault();
@@ -18,7 +19,9 @@ const onDrop = (event) => {
   }
 };
 
-columns.forEach((column) => {
+columns.forEach((column,index) => {
+  const label = column.querySelector('.label');
+  label.style.backgroundColor = colours[index];
   column.ondragover = onDragOver;
   column.ondrop = onDrop;
 });
