@@ -27,7 +27,7 @@ def live(response):
 def player_view(request):
     if request.method == 'GET':
         summoner_name = request.GET.get('summoner_name')
-        api_key = 'RGAPI-7369fa4b-0afe-49a3-9307-04aaca793da9'
+        api_key = 'RGAPI-6f4cda0c-49d1-42fd-8d47-f6d436d85039'
         api_url = f'https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summoner_name}?api_key={api_key}'
         w=LolWatcher(api_key)
         summoner = w.summoner.by_name('euw1', summoner_name)

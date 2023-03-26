@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tierlist.css'%}">
     <title>LOLTrack</title>
   </head>
   <body>
@@ -29,17 +30,221 @@
         <a class="nav-link " href="/live">Live Games</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <form action="{% url 'player' %}" method="get" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" name="summoner_name" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
+<h1> Tier List</h1>
+
+<div id="board">
+    <div class="column">
+        <div class="label"> S</div>
+
+    </div>
+
+    <div class="column">
+        <div class="label"> A</div>
+    </div>
+
+    <div class="column">
+        <div class="label"> B</div>
+    </div>
+
+    <div class="column">
+        <div class="label"> C</div>
+    </div>
+
+    <div class="column">
+        <div class="label"> D</div>
+    </div>
+    <div class="column">
+        <div class="label"> E</div>
+    </div>
+</div>
+
+<h2>Card Bank</h2>
+<div id="bank">
+    <div class="card"  id="aatrox"draggable="true"><img  src="{% static 'assets/img/champs/aatrox.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ahri.jpg' %}">AHRI</div>
+    <div class="card"  id="akali"draggable="true"><img  src="{% static 'assets/img/champs/akali.jpg' %}">AKALI</div>
+    <div class="card"  id="akshan"draggable="true"><img  src="{% static 'assets/img/champs/akshan.jpg' %}">AKSHAN</div>
+    <div class="card"  id="alistar"draggable="true"><img  src="{% static 'assets/img/champs/alistar.jpg' %}">ALISTAR</div>
+    <div class="card"  id="amumu"draggable="true"><img  src="{% static 'assets/img/champs/amumu.jpg' %}">AMUMU</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/anivia.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/annie.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/aphelios.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ashe.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/aurelionsol.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/azir.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/bard.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/blitzcrank.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/brand.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/braum.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/caitlyn.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/camille.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/cassiopeia.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/chogath.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/corki.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/darius.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/diana.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/draven.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/drmundo.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ekko.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/elise.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/evelynn.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ezreal.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/fiddlesticks.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/fiora.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/fizz.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/galio.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/gangplank.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/garen.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/gnar.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/gragas.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/graves.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/gwen.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/hecarim.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/heimerdinger.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/illaoi.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/irelia.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ivern.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/janna.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/jarvaniv.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/jax.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/jayce.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/jhin.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/jinx.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/Kaisa.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kalista.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/karma.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/karthus.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kassadin.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/katarina.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kayle.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kayn.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kennen.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/khazix.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kindred.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kled.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/kogmaw.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/leblanc.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/leesin.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/leona.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/lillia.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/lissandra.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/lucian.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/lulu.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/lux.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/malphite.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/malzahar.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/maokai.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/masteryi.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/missfortune.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/monkeyking.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/mordekaiser.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/morgana.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/nami.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/nasus.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/nautilus.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/neeko.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/nidalee.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/nocturne.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/nunu.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/olaf.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/orianna.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ornn.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/pantheon.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/poppy.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/pyke.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/qiyana.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/quinn.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/rakan.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/rammus.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/reksai.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/rell.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/renata.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/renekton.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/rengar.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/riven.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/rumble.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ryze.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/samira.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/sejuani.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/seraphine.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/sett.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/shaco.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/shen.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/shyvana.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/singed.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/sion.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/sivir.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/skarner.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/sona.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/soraka.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/swain.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/sylas.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/syndra.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/tahmkench.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/taliyah.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/talon.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/taric.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/teemo.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/thresh.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/tristana.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/trundle.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/tryndamere.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/twistedfate.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/twitch.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/udyr.jpg' %}">AATROX</div>
+
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/urgot.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/varus.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/vayne.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/veigar.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/velkoz.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/vex.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/vi.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/viego.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/viktor.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/vladimir.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/volibear.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/warwick.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/xayah.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/xerath.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/yasuo.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/yone.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/yorick.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/yuumi.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/zac.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/zed.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/zeri.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ziggs.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/zoe.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/zyra.jpg' %}">AATROX</div>
+    <div class="card"  id="ahir"draggable="true"><img  src="{% static 'assets/img/champs/ahri.jpg' %}">AATROX</div>
+
+</div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'assets/js/cards.js'%}"></script>
+    <script src="{% static 'assets/js/columns.js'%}"></script>
+    <script src="{% static 'assets/js/bank.js'%}"></script>
   </body>
 </html>
