@@ -29,12 +29,6 @@
   <!-- Template Main CSS File -->
   <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio - v1.2.0
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -45,34 +39,18 @@
 
       <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1>PhotoFolio</h1>
+        <img src="{% static 'assets/img/logo.png'%}" alt="">
+
+        <h1>LOLTrack</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.html">Nature</a></li>
-              <li><a href="gallery.html">People</a></li>
-              <li><a href="gallery.html">Architecture</a></li>
-              <li><a href="gallery.html">Animals</a></li>
-              <li><a href="gallery.html">Sports</a></li>
-              <li><a href="gallery.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/tierlist">Tier List</a></li>
+
+          <li><a href="/chapions">Champions</a></li>
+          <li><a href="/live">Live Games</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -93,9 +71,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
-          <h2>I'm <span>Jenny Wilson</span> a Professional Photographer from New York City</h2>
-          <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
-          <a href="contact.html" class="btn-get-started">Available for hire</a>
+          <h2> Champion List</h2>
+
         </div>
       </div>
     </div>
@@ -110,148 +87,1463 @@
         <div class="row gy-4 justify-content-center">
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-1.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-1.jpg' %}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg" title="AATROX" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/aatrox/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-2.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_27.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-2.jpg' %}" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_27.jpg" title="AHRI" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ahri/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-3.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_9.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-3.jpg' %}" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_9.jpg" title="AKALI" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/akali/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-4.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_10.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-4.jpg' %}" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_10.jpg" title="AKSHAN" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/akshan/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-5.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_29.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-5.jpg' %}" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_29.jpg" title="Alistar" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/alistar/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-6.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_17.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-6.jpg' %}" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_17.jpg" title="AMUMU" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/amumu/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-7.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-7.jpg' %}" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg" title="ANIVIA" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/anivia/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-8.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_10.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-8.jpg' %}" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_10.jpg" title="ANNIE" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/annie/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-9.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-9.jpg' %}" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg" title="APHELIOS" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/aphelios/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-10.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-10.jpg' %}" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg" title="ASHE" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ashe/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-11.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-11.jpg' %}" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg" title="AURELION SOL" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/aurelion-sol/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-12.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-12.jpg' %}" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg" title="AZIR" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/azir/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-13.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-13.jpg' %}" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg" title="Bard" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/bard/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-14.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-14.jpg' %}" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg" title="BEL'VET" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/bel-veth/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-15.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-15.jpg' %}" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg" title="BLITZCRANK" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/blitzcrank/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
           <div class="col-xl-3 col-lg-4 col-md-6">
             <div class="gallery-item h-100">
-              <img src="{% static 'assets/img/gallery/gallery-16.jpg' %}" class="img-fluid" alt="">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg" class="img-fluid" alt="">
               <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="{% static 'assets/img/gallery/gallery-16.jpg' %}" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg" title="Brand" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/brand/" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
           </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg" title="Braum" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/braum/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_22.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_22.jpg" title="Caitlyn" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/caitlyn/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg" title="Camille" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/camille/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg" title="Cassiopeia" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/cassiopeia/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg" title="Cho'gath" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/cho-gath/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg" title="Corki" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/corki/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg" title="Darius" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/darius/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg" title="Diana" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/diana/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg" title="DR Mundo" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/dr-mundo/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg" title="Draven" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/draven/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg" title="Ekko" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ekko/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg" title="Elise" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/elise/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg" title="Evelynn" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/evelynn/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg" title="Ezreal" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ezreal/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg" title="Fiddlesticks" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/fiddlesticks/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg" title="Fiora" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/fiora/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg" title="Fizz" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/fizz/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg" title="Galio" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/galio/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg" title="Gangplank" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/gangplank/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg" title="Garen" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/garen/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg" title="Gnar" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/gnar/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg" title="Gragas" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/gragas/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg" title="Graves" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/graves/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg" title="Gwen" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/gwen/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg" title="Hecarim" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/hecarim/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg" title="Heimerdinger" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/heimerdinger/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg" title="Illaoi" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/illaoi/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg" title="Irelia" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/irelia/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg" title="Iven" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ivern/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg" title="Janna" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/janna/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg" title="Jarvan IV" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/jarvan-iv/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg" title="Jax" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/jax/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg" title="Jayce" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/jayce/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg" title="Jhin" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/jhin/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" title="Jinx" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/jinx/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg" title="K'sante" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/k-sante/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg" title="Kai'sa" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kai-sa/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg" title="Kalista" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kalista/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg" title="Karma" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/karma/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg" title="Karthus" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/karthus/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg" title="Kassadin" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kassadin/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg" title="Katarina" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/katarina/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_3.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_3.jpg" title="Kayle" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kayle/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg" title="Kayn" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kayn/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg" title="Kennen" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kennen/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg" title="Kha'zics" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kha-zix/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg" title="Kindred" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kindred/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg" title="Kled" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kled/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg" title="Kow'maw" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/kog-maw/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg" title="AHRI" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/leblanc/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg" title="Lee Sin" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/lee-sin/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg" title="Leona" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/leona/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg" title="Lillia" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/lillia/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg" title="Lissandra" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/lissandra/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg" title="Lucian" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/lucian/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg" title="Lulu" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/lulu/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg" title="Lux" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/lux/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg" title="Malphite" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/malphite/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg" title="Malzahar" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/malzahar/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg" title="Maokai" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/maokai/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg" title="Master Yi" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/master-yi/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg" title="Milio" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/milio/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg" title="Miss Fortune" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/miss-fortune/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg" title="Mordekaiser" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/mordekaiser/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_41.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_41.jpg" title="Morgana" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/morgana/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg" title="Nami" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nami/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg" title="Nasus" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nasus/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg" title="Nautilus" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nautilus/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg" title="Neeko" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/neeko/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg" title="Nidalee" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nidalee/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg" title="Nilah" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nilah/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg" title="Nocturne" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nocturne/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg" title="Nunu" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/nunu/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg" title="Olaf" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/Olaf_0/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg" title="Orianna" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/orianna/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg" title="Ornn" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ornn/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg" title="Pantheon" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/pantheon/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg" title="Poppy" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/poppy/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg" title="Pyke" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/pyke/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg" title="Qiyana" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/qiyana/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg" title="Quinn" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/quinn/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg" title="Rakan" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/rakan/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg" title="Rammus" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/rammus/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg" title="Rek'sai" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/rek-sai/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg" title="Rell" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/rell/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg" title="Renata" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/renata/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg" title="Renekton" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/renekton/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg" title="Rengar" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/rengar/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg" title="Riven" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/riven/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg" title="Rumble" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/rumble/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg" title="Ryze" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ryze/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg" title="Samira" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/samira/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg" title="Sejuani" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/sejuani/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg" title="Senna" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/senna/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg" title="Seraphine" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/seraphine/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg" title="Sett" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/sett/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg" title="Shaco" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/shaco/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg" title="Shen" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/shen/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg" title="Shyvana" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/shyvana/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg" title="Singed" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/singed/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg" title="Sion" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/sion/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg" title="Sivir" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/sivir/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg" title="Skarner" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/skarner/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg" title="Sona" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/sona/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg" title="Soraka" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/soraka/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg" title="Swain" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/swain/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg" title="Sylas" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/sylas/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg" title="Syndra" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/syndra/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg" title="Tahm Kench" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/tahm-kench/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg" title="Taliyah" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/taliyah/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg" title="Talon" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/talon/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg" title="Taric" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/taric/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg" title="Teemo" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/teemo/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg" title="Thresh" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/thresh/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg" title="Tristana" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/tristana/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg" title="Trundle" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/trundle/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg" title="Tryndamere" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/tryndamere/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg" title="Twisted Fate" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/twisted-fate/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg" title="Twitch" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/twitch/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg" title="Udyr" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/udyr/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg" title="Urgot" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/urgot/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg" title="Varus" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/vayne/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg" title="Veigar" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/veigar/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg" title="Vel'koz" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/vel-koz/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg" title="Vex" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/vex/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg" title="Vi" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/vi/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg" title="Viego" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/viego/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg" title="Viktor" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/viktor/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg" title="Vladimir" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/vladimir/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg" title="Volibear" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/volibear/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg" title="Warwick" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/warwick/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg" title="Wukong" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/wukong/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg" title="Xayah" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/xayah/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg" title="Xerath" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/xerath/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg" title="Xin Zhao" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/xin-zhao/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" title="Yasuo" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/yasuo/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg" title="Yone" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/yone/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg" title="Yorick" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/yorick/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg" title="Yuumi" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/yuumi/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg" title="Zac" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/zac/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg" title="Zed" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/zed/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg" title="Zeri" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/zeri/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg" title="AKALI" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/ziggs/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg" title="Zilian" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/zilian/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg" title="Zoe" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/zoe/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg" class="img-fluid" alt="">
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg" title="Zyra" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="https://www.leagueoflegends.com/en-us/champions/zyra/" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+
 
         </div>
 
