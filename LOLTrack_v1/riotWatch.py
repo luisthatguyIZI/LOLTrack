@@ -1,7 +1,7 @@
 from riotwatcher import LolWatcher
 import requests
 
-api_key = 'RGAPI-7369fa4b-0afe-49a3-9307-04aaca793da9'
+api_key = 'RGAPI-0f7e7412-c47e-4167-988f-a4183651fd5e'
 region = 'EUW1'
 puuid = 'VVbkrzvOCMvMk_eGgl5Rv3bUrLSNT0iiBbwXSKWBauv3QY8u2MtfJKXienRSM0XzM1H8J_ACdlgANg'
 username=""
@@ -24,7 +24,7 @@ match_data=(matchData_resp.json())
 player_info=(resp.json())
 
 me=(match_data['metadata']['participants'].index(puuid))
-#print(match_data['info']['participants'][me]['championName'])
+print(match_data['info']['participants'][me]['win'])
 
 kda=((match_data['info']['participants'][me]['kills']) + (match_data['info']['participants'][me]['assists'])) / (match_data['info']['participants'][me]['deaths'])
 #print(kda)
@@ -38,8 +38,8 @@ ranked_stats = w.league.by_summoner('euw1', summoner['id'])
 
 
 
-#print(match_api_url)
+#print(match_data['me']['win'])
 #print(api_url)
-player_id=(player_info["puuid"])
-print(player_id)
+#player_id=(player_info["puuid"])
+print(match_list)
 
